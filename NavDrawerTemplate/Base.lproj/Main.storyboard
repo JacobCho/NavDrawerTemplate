@@ -1,13 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Nav Drawer View Controller-->
+        <scene sceneID="xtX-Ur-Mn7">
+            <objects>
+                <viewController storyboardIdentifier="NavDrawerViewController" id="Pub-5P-I2C" customClass="NavDrawerViewController" customModule="NavDrawerTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hMV-80-3fq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fm7-y3-dVI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bho-Ok-Ucs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aPq-HN-YAa">
+                                <rect key="frame" x="0.0" y="125" width="600" height="350"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NavDrawerCell" rowHeight="70" id="WsS-iE-tGq" customClass="NavDrawerTableViewCell" customModule="NavDrawerTemplate" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WsS-iE-tGq" id="fnt-Kf-CzO">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txq-1c-dbV">
+                                                    <rect key="frame" x="219" y="24" width="162" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="162" id="Bnl-2k-pHv"/>
+                                                        <constraint firstAttribute="height" constant="21" id="hcM-5E-eBo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="txq-1c-dbV" secondAttribute="centerY" id="I0m-iD-ATF"/>
+                                                <constraint firstAttribute="centerX" secondItem="txq-1c-dbV" secondAttribute="centerX" id="clr-CH-Euh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="navLabel" destination="txq-1c-dbV" id="DPL-nc-dLZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Pub-5P-I2C" id="E5E-by-oSx"/>
+                                    <outlet property="delegate" destination="Pub-5P-I2C" id="Lci-a1-ahz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="aPq-HN-YAa" secondAttribute="centerY" id="3c2-Wv-yEG"/>
+                            <constraint firstItem="aPq-HN-YAa" firstAttribute="width" secondItem="Bho-Ok-Ucs" secondAttribute="width" id="4Tu-bx-Kpa"/>
+                            <constraint firstAttribute="centerX" secondItem="aPq-HN-YAa" secondAttribute="centerX" id="6Oa-Tl-vYi"/>
+                            <constraint firstItem="aPq-HN-YAa" firstAttribute="top" secondItem="hMV-80-3fq" secondAttribute="bottom" constant="105" id="MPT-pR-mwV"/>
+                            <constraint firstItem="Fm7-y3-dVI" firstAttribute="top" secondItem="aPq-HN-YAa" secondAttribute="bottom" constant="125" id="avb-ih-W6U"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fc5-xa-N5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="371" y="-322"/>
+        </scene>
+        <!--Center View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CenterViewController" id="vXZ-lx-hvc" customClass="CenterViewController" customModule="NavDrawerTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -20,6 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="376" y="383"/>
         </scene>
     </scenes>
 </document>

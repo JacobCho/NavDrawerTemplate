@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		526AEBA81ABE203E000AE735 /* DummyViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AEBA71ABE203E000AE735 /* DummyViewControllerA.swift */; };
+		526AEBAA1ABE2902000AE735 /* DummyViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AEBA91ABE2902000AE735 /* DummyViewControllerB.swift */; };
+		526AEBAC1ABE292C000AE735 /* DummyViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526AEBAB1ABE292C000AE735 /* DummyViewControllerC.swift */; };
 		52DBD39D1ABDDDC900D2A99F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBD39C1ABDDDC900D2A99F /* AppDelegate.swift */; };
-		52DBD39F1ABDDDC900D2A99F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBD39E1ABDDDC900D2A99F /* ViewController.swift */; };
 		52DBD3A21ABDDDC900D2A99F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DBD3A01ABDDDC900D2A99F /* Main.storyboard */; };
 		52DBD3A41ABDDDC900D2A99F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DBD3A31ABDDDC900D2A99F /* Images.xcassets */; };
 		52DBD3A71ABDDDC900D2A99F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52DBD3A51ABDDDC900D2A99F /* LaunchScreen.xib */; };
 		52DBD3B31ABDDDC900D2A99F /* NavDrawerTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBD3B21ABDDDC900D2A99F /* NavDrawerTemplateTests.swift */; };
+		52DBD3BD1ABDDF2400D2A99F /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBD3BC1ABDDF2400D2A99F /* CenterViewController.swift */; };
+		52DBD3BF1ABDDF4400D2A99F /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBD3BE1ABDDF4400D2A99F /* ContainerViewController.swift */; };
+		52DBD3C11ABDDFA800D2A99F /* NavDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBD3C01ABDDFA800D2A99F /* NavDrawerViewController.swift */; };
+		52DBD3C31ABDE5E800D2A99F /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBD3C21ABDE5E800D2A99F /* UIStoryboardExtension.swift */; };
+		52DBD3C51ABE1D5300D2A99F /* NavDrawerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBD3C41ABE1D5300D2A99F /* NavDrawerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +33,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		526AEBA71ABE203E000AE735 /* DummyViewControllerA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyViewControllerA.swift; sourceTree = "<group>"; };
+		526AEBA91ABE2902000AE735 /* DummyViewControllerB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyViewControllerB.swift; sourceTree = "<group>"; };
+		526AEBAB1ABE292C000AE735 /* DummyViewControllerC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyViewControllerC.swift; sourceTree = "<group>"; };
 		52DBD3971ABDDDC900D2A99F /* NavDrawerTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavDrawerTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DBD39B1ABDDDC900D2A99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DBD39C1ABDDDC900D2A99F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52DBD39E1ABDDDC900D2A99F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52DBD3A11ABDDDC900D2A99F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52DBD3A31ABDDDC900D2A99F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		52DBD3A61ABDDDC900D2A99F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		52DBD3AC1ABDDDC900D2A99F /* NavDrawerTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavDrawerTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DBD3B11ABDDDC900D2A99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DBD3B21ABDDDC900D2A99F /* NavDrawerTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavDrawerTemplateTests.swift; sourceTree = "<group>"; };
+		52DBD3BC1ABDDF2400D2A99F /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		52DBD3BE1ABDDF4400D2A99F /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		52DBD3C01ABDDFA800D2A99F /* NavDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavDrawerViewController.swift; sourceTree = "<group>"; };
+		52DBD3C21ABDE5E800D2A99F /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		52DBD3C41ABE1D5300D2A99F /* NavDrawerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavDrawerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +92,14 @@
 			isa = PBXGroup;
 			children = (
 				52DBD39C1ABDDDC900D2A99F /* AppDelegate.swift */,
-				52DBD39E1ABDDDC900D2A99F /* ViewController.swift */,
+				52DBD3BC1ABDDF2400D2A99F /* CenterViewController.swift */,
+				52DBD3BE1ABDDF4400D2A99F /* ContainerViewController.swift */,
+				52DBD3C21ABDE5E800D2A99F /* UIStoryboardExtension.swift */,
+				52DBD3C01ABDDFA800D2A99F /* NavDrawerViewController.swift */,
+				52DBD3C41ABE1D5300D2A99F /* NavDrawerTableViewCell.swift */,
+				526AEBA71ABE203E000AE735 /* DummyViewControllerA.swift */,
+				526AEBA91ABE2902000AE735 /* DummyViewControllerB.swift */,
+				526AEBAB1ABE292C000AE735 /* DummyViewControllerC.swift */,
 				52DBD3A01ABDDDC900D2A99F /* Main.storyboard */,
 				52DBD3A31ABDDDC900D2A99F /* Images.xcassets */,
 				52DBD3A51ABDDDC900D2A99F /* LaunchScreen.xib */,
@@ -212,8 +233,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52DBD39F1ABDDDC900D2A99F /* ViewController.swift in Sources */,
+				52DBD3BD1ABDDF2400D2A99F /* CenterViewController.swift in Sources */,
+				52DBD3BF1ABDDF4400D2A99F /* ContainerViewController.swift in Sources */,
+				526AEBAA1ABE2902000AE735 /* DummyViewControllerB.swift in Sources */,
 				52DBD39D1ABDDDC900D2A99F /* AppDelegate.swift in Sources */,
+				526AEBAC1ABE292C000AE735 /* DummyViewControllerC.swift in Sources */,
+				52DBD3C31ABDE5E800D2A99F /* UIStoryboardExtension.swift in Sources */,
+				52DBD3C51ABE1D5300D2A99F /* NavDrawerTableViewCell.swift in Sources */,
+				526AEBA81ABE203E000AE735 /* DummyViewControllerA.swift in Sources */,
+				52DBD3C11ABDDFA800D2A99F /* NavDrawerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +433,7 @@
 				52DBD3B81ABDDDC900D2A99F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52DBD3B91ABDDDC900D2A99F /* Build configuration list for PBXNativeTarget "NavDrawerTemplateTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +442,7 @@
 				52DBD3BB1ABDDDC900D2A99F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
